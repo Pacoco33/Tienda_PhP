@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Producto</title>
+</head>
+<body>
+    
+    <?php
+    session_start();
+    $admin = "admin";
+    
+    echo "Hola $admin.";
+    echo "<br>";
+    ?>
+
+    <h2>Formulario de Producto</h2>
+    <form action="recogeproductos.php" method="POST">
+        
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" ><br><br>
+
+        <label for="editorial">Editorial:</label>
+        <select id="editorial" name="editorial" >
+            <option value="maldito">Maldito</option>
+            <option value="devir">Devir</option>
+            <option value="tranjis">Tranjis</option>
+            <option value="mercurio">Mercurio</option>
+            <option value="asmodee">Asmodee</option>
+            <option value="masqueoca">MasQueOca</option>
+            <option value="miscelanea">Miscelánea</option>
+        </select><br><br>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" name="tipo" >
+            <option value="abstracto">Abstracto</option>
+            <option value="coleccionable">Coleccionable</option>
+            <option value="infantil">Infantil</option>
+            <option value="familiar">Familiar</option>
+            <option value="fiesta">Fiesta</option>
+            <option value="estrategia">Estrategia</option>
+            <option value="temático">Temático</option>
+            <option value="guerra">Guerra</option>
+            <option value="rol">Rol</option>
+        </select><br><br>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" min="0.00" required><br><br>
+
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" name="stock" min="0" required><br><br>
+
+        <input type="submit" value="Enviar">
+        <br>
+        <a href="Menuadministrador.php"><button>Ir al menú</button></a>
+    </form>
+</body>
+<br>
+<a href="Menuadministrador.php"><button>Volver a menú administrar productos</button></a><br>
+<br>
+</html>

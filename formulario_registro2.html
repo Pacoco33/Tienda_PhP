@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario para registro</title>
+</head>
+<body>
+
+<h2>Rellena los datos del cliente</h2>
+
+<form action="recogedatos2.php" method="post">
+  <label for="nick">Nick:</label><br>
+  <input type="text" id="nick" name="nick" maxlength="50" required><br><br>
+  
+  <label for="contra">Contraseña:</label><br>
+  <input type="password" id="contra" name="contra" maxlength="50" required><br><br>
+  
+  <label for="dni">DNI:</label><br>
+  <input type="text" id="dni" name="dni" pattern="[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKE]" maxlength="9" required title="Escribe 8 dígitos seguidos de una letra (mayúscula)"><br><br>
+  
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" maxlength="50" required><br><br>
+  
+  <label for="ap1">Primer Apellido:</label><br>
+  <input type="text" id="ap1" name="ap1" maxlength="50"><br><br>
+  
+  <label for="ap2">Segundo Apellido:</label><br>
+  <input type="text" id="ap2" name="ap2" maxlength="50"><br><br>
+  
+  <label for="tlf">Teléfono:</label><br>
+  <input type="tel" id="tlf" name="tlf" pattern="[0-9]{9}" maxlength="9" title="Escribe 9 dígitos"><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" maxlength="100" required><br><br>
+  
+  <label for="tipo_via">Tipo de Vía:</label><br>
+  <select id="tipo_via" name="tipo_via" required>
+    <option value="calle">Calle</option>
+    <option value="avnda">Avenida</option>
+    <option value="carretera">Carretera</option>
+  </select><br><br>
+  
+  <label for="nombre_via">Nombre de la Vía:</label><br>
+  <input type="text" id="nombre_via" name="nombre_via" maxlength="100" required><br><br>
+  
+  <label for="num_via">Número de Vía:</label><br>
+  <input type="text" id="num_via" name="num_via" required><br><br>
+  
+  <label for="bloque">Bloque:</label><br>
+  <input type="text" id="bloque" name="bloque" maxlength="10"><br><br>
+  
+  <label for="portal">Portal:</label><br>
+  <input type="text" id="portal" name="portal" maxlength="10"><br><br>
+  
+  <label for="escalera">Escalera:</label><br>
+  <input type="text" id="escalera" name="escalera" maxlength="10"><br><br>
+  
+  <label for="planta">Planta:</label><br>
+  <input type="text" id="planta" name="planta" maxlength="10"><br><br>
+  
+  <label for="puerta">Puerta:</label><br>
+  <input type="text" id="puerta" name="puerta" maxlength="10"><br><br>
+  
+  <label for="fecha">Fecha de alta:</label><br>
+  <input type="date" id="fecha" name="fecha" maxlength="10"><br><br>
+  
+  <label for="nom_loc">Localidad:</label><br>
+  <input type="text" id="nom_loc" name="nom_loc" maxlength="30"><br><br>
+  
+  <label for="nom_prov">Provincia:</label><br>
+  <input type="text" id="nom_prov" name="nom_prov" maxlength="30"><br><br>
+  
+  
+  
+  <input type="submit" value="Guardar">
+</form>
+
+</body>
+</html>
